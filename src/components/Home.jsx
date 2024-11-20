@@ -6,7 +6,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="flex flex-wrap mr-14 justify-center gap-2 ml-5 mt-6">
+      <div className="flex flex-wrap mr-14 justify-center gap-2 ml-8 mt-6">
         <button
           className="btn btn-outline px-4 py-2 rounded-md"
           onClick={() => setCategory("fashion")}
