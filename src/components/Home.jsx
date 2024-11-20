@@ -6,27 +6,27 @@ const Home = () => {
 
   return (
     <>
-      <div className="flex gap-10 ml-32 mt-6">
+      <div className="flex flex-wrap mr-14 justify-center gap-4 ml-32 mt-6">
         <button
-          className="btn btn-outline "
+          className="btn btn-outline px-4 py-2 rounded-md"
           onClick={() => setCategory("fashion")}
         >
           Fashion
         </button>
         <button
-          className="btn btn-outline btn-primary"
+          className="btn btn-outline btn-primary px-4 py-2 rounded-md"
           onClick={() => setCategory("nature")}
         >
           Nature
         </button>
         <button
-          className="btn btn-outline btn-secondary"
+          className="btn btn-outline btn-secondary px-4 py-2 rounded-md"
           onClick={() => setCategory("science")}
         >
           Science
         </button>
         <button
-          className="btn btn-outline btn-accent"
+          className="btn btn-outline btn-accent px-4 py-2 rounded-md"
           onClick={() => setCategory("people")}
         >
           people
@@ -42,13 +42,13 @@ const Home = () => {
      
       </div>
 
-      <div className="flex flex-wrap gap-10 justify-center mt-6  mx-auto ">
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 mt-7 ">
         {image.map((images) => (
           <div key={images.id}>
             <img
               src={images.webformatURL}
               alt=""
-              className="w-64 h-64 border-2 transition-all duration-100 hover:scale-110"
+              className="w-full h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 border-2 transition-all duration-100 hover:scale-110 overflow-hidden"
             />
           </div>
         ))}
