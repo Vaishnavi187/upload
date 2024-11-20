@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { mycontext, useMyContext } from "../context/Mycontext";
+import {  useMyContext } from "../context/Mycontext";
 
 const Home = () => {
   const { image, setQuery, setCategory } = useMyContext();
